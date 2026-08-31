@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Google Search Slash Focus",
+  "version": "1.0.0",
+  "description": "Press '/' to instantly focus the Google Search / AI prompt box, unless you're already typing somewhere else.",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["https://www.google.com/*", "https://google.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

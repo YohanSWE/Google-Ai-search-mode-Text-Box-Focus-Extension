@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Google AI Search Mode Text Box Focus",
+  "version": "1.0.0",
+  "description": "Automatically captures your typing and focuses the Google Search Mode input bar so you can search instantly without clicking.",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["https://www.google.com/*", "https://google.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
